@@ -1,0 +1,33 @@
+# General shell aliases
+alias ls='ls -lah'
+alias gr='egrep -e'
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# Work related
+alias nrgy='newman run --color --timeout-request 120000 -g globals.postman_globals.json -e'
+alias nrgypreprod='newman run --color --timeout-request 120000 -g globals.postman_globals.json -e environments/preprod.postman_environment.json'
+alias nrgydev='newman run --color --timeout-request 120000 -g globals.postman_globals.json -e environments/dev.postman_environment.json'
+alias nrgylocal='newman run --color --timeout-request 120000 -g globals.postman_globals.json -e environments/local.postman_environment.json'
+
+alias svns='svn revert -R . && svn switch'
+alias svnbr='svn info | egrep -e "^URL" | sed "s/URL: //"'
+alias svnst='svn st; svn info | egrep -e "^URL" | sed "s/URL: //"'
+alias svnstconflicts='svn st | egrep -e "C\b|>|\!|\?"'
+alias svnls='svn ls ^/branches'
+alias svnc='svn commit -m'
+alias svnup='svn up'
+alias 7up='svn up'
+alias svnresolve='svn resolve --accept=working'
+alias svnmergepreprod='svn merge ^/branches/preprod'
+alias svnrmcl='svn changelist --remove --recursive --cl'
+
+# Environment related
+alias tf='sudo tail -f'
+
+# fzf
+# alias fzfpreview='fzf --preview "head -100 {}"'
+
+
+# admin tasks
+alias check_ssl="openssl s_client -connect $HOST:443 -servername $HOST -showcerts < /dev/null | openssl x509 -text | egrep '(DNS|Not After)'"
