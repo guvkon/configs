@@ -5,6 +5,8 @@ export DEFAULT_USER="guvkon"
 
 prompt_context(){}
 
+# Theme requires installation of patched versions of Powerline fonts.
+# See for installation instructions https://github.com/powerline/fonts
 ZSH_THEME="agnoster"
 CASE_SENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
