@@ -2,6 +2,8 @@ export PATH=$HOME/bin:$HOME/scripts:/usr/local/bin:$HOME/.config/composer/vendor
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR=vim
 export DEFAULT_USER="guvkon"
+export LANG=en_US.UTF-8
+# export JAVA_HOME=$(/usr/libexec/java_home)
 
 prompt_context(){}
 
