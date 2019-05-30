@@ -25,6 +25,11 @@ If you use zsh and want to use `.zshrc` configuration file the following is requ
 * [Oh My Zsh](https://ohmyz.sh) framework for managing zsh configuration
 * One of the [patched fonts from Vim-Powerline](https://github.com/powerline/fonts)
 
+If you want to use `.vimrc` to full potential create a symlink for vim-packs directory to your vim plugins directory (if using vim >= 8.x ~/.vim/pack/USERNAME/start):
+```zsh
+ln -s ~/configs/vim-packs ~/.vim/pack/guvkon/start
+```
+
 # Screenshots
 
 ![Belafonte Night + Fira Mono](/screenshot.png)
