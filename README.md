@@ -9,7 +9,7 @@ For example, if you would like to use `.vimrc` and `.zshrc` configuration files:
 
 ```zsh
 cd ~
-git clone https://github.com/guvkon/configs.git
+git clone --recurse-submodules https://github.com/guvkon/configs.git
 ln -s ~/configs/.vimrc ~/.vimrc
 ln -s ~/configs/.zshrc ~/.zshrc
 ```
