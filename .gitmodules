@@ -31,3 +31,15 @@
 [submodule "vim-packs/vim-fugitive"]
 	path = vim-packs/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule "vim-packs/ale"]
+	path = vim-packs/ale
+	url = https://github.com/w0rp/ale.git
+[submodule "vim-packs/vim-svngutter"]
+	path = vim-packs/vim-svngutter
+	url = git@github.com:vim-scripts/vim-svngutter.git
+[submodule "vim-packs/vim-go"]
+	path = vim-packs/vim-go
+	url = git@github.com:fatih/vim-go.git
+[submodule "vim-packs/typescript-vim"]
+	path = vim-packs/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
