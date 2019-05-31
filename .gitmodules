@@ -7,9 +7,6 @@
 [submodule "vim-packs/rename.vim"]
 	path = vim-packs/rename.vim
 	url = https://github.com/danro/rename.vim.git
-[submodule "vim-packs/tcomment_vim"]
-	path = vim-packs/tcomment_vim
-	url = https://github.com/tomtom/tcomment_vim.git
 [submodule "vim-packs/vim-ansible-yaml"]
 	path = vim-packs/vim-ansible-yaml
 	url = git@github.com:chase/vim-ansible-yaml.git
