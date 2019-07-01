@@ -422,3 +422,4 @@ let g:vc_browse_cache_all = 1
 
 let g:svngutter_enabled = 0
 
+let g:go_version_warning = 0
