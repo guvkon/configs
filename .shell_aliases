@@ -1,6 +1,6 @@
 # General shell aliases
 alias ls='ls -lah'
-alias gr='egrep -e'
+alias gr='grep --exclude-dir=.idea -rn -E'
 alias ..='cd ..'
 alias ...='cd ../..'
 
@@ -28,6 +28,7 @@ alias tf='sudo tail -f'
 # fzf
 # alias fzfpreview='fzf --preview "head -100 {}"'
 
+alias doc=docker-compose
 
 # admin tasks
 alias check_ssl="openssl s_client -connect $HOST:443 -servername $HOST -showcerts < /dev/null | openssl x509 -text | egrep '(DNS|Not After)'"
