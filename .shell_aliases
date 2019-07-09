@@ -1,5 +1,5 @@
 # General shell aliases
-alias ls='ls -lah --color'
+alias ls='ls -lahG'
 alias gr='grep --exclude-dir=.idea -rn -E'
 alias ..='cd ..'
 alias ...='cd ../..'
