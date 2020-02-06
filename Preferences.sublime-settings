@@ -1,0 +1,31 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": false,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".cache",
+		"dist",
+		".idea"
+	],
+	"font_face": "Fire Code Retina",
+	"font_size": 14,
+	"highlight_line": false,
+	"ignored_packages":
+	[
+		"JSLint"
+	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"remember_full_screen": true,
+	"save_on_focus_lost": true,
+	"shift_tab_unindent": true,
+	"theme": "Adaptive.sublime-theme",
+	"trim_trailing_white_space_on_save": true,
+	"vintage_ctrl_keys": true,
+	"vintage_start_in_command_mode": true
+}
