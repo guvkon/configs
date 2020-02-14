@@ -17,7 +17,8 @@
 	"highlight_line": false,
 	"ignored_packages":
 	[
-		"JSLint"
+		"JSLint",
+		"SublimeLinter-contrib-jslint"
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
