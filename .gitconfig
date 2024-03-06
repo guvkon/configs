@@ -2,4 +2,12 @@
 [user]
 # Please adapt and uncomment the following lines:
 name = Konstantin Gusev
-email = guvkon@protonmail.com
+email = guvkon.net@icloud.com
+[pull]
+	rebase = true
+[commit]
+	gpgsign = true
+[advice]
+	detachedhead = false
+[core]
+	ignorecase = false

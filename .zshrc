@@ -1,9 +1,12 @@
-export PATH=$HOME/bin:$HOME/scripts:/usr/local/bin:$HOME/.config/composer/vendor/bin:$PATH:$HOME/go/bin:$HOME/vendor/bin
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR=vim
 export DEFAULT_USER="guvkon"
 export LANG=en_US.UTF-8
-# export JAVA_HOME=$(/usr/libexec/java_home)
+
+export PATH="$HOME/bin:$HOME/scripts:/usr/local/bin:$PATH"
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+export PATH="$PATH:/opt/homebrew/opt/mysql-client@8.0/bin"
+export PATH="$PATH:/opt/homebrew/bin"
 
 prompt_context(){}
 
@@ -13,36 +16,17 @@ ZSH_THEME="agnoster"
 CASE_SENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git z cp dotenv gulp sudo svn svn-fast-info symfony2 vagrant docker)
+plugins=(git z cp)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.shell_aliases
 
-prompt_svn() {
-    local rev branch
-    if in_svn; then
-        rev=$(svn_get_rev_nr)
-        branch=$(svn_get_branch_name)
-        if [[ $(svn_dirty_choose_pwd 1 0) -eq 1 ]]; then
-            prompt_segment yellow black
-            echo -n "$rev@$branch"
-            echo -n "±"
-        else
-            prompt_segment green black
-            echo -n "$rev@$branch"
-        fi
-    fi
-}
-
-build_prompt() {
-    RETVAL=$?
-    prompt_status
-    prompt_context
-    prompt_dir
-    prompt_git
-    prompt_svn
-    prompt_end
-}
+export HOMEBREW_NO_INSTALL_CLEANUP=TRUE
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.custom.zshrc ] && source ~/.custom.zshrc
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
