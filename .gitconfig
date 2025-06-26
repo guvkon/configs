@@ -1,13 +1,16 @@
-# This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
 name = Konstantin Gusev
-email = guvkon.net@icloud.com
+email = guvkon@protonmail.com
+
 [pull]
 	rebase = true
+
 [commit]
 	gpgsign = true
+
 [advice]
 	detachedhead = false
+
 [core]
 	ignorecase = false
+
